@@ -1,0 +1,255 @@
+<div class="resume-wrapper container-fluid">
+  <!-- Top Banner -->
+  <div class="promo-banner text-center bg-black text-white py-3">
+    <span class="text-success fw-bold">NEW!</span> Get hired faster with a
+    resume review.
+    <a href="#" class="text-decoration-underline text-white"
+      >See more details</a
+    >
+  </div>
+
+  <nav
+    id="mainNavbar"
+    class="navbar navbar-expand-lg py-3"
+    [class.shadow-sm]="isScrolled"
+    [class.fixed-top]="isScrolled"
+  >
+    <div class="container">
+      <img
+        src="../../assets/images/MainLogo.png"
+        alt="Logo"
+        height="50"
+        class="logo"
+      />
+      <a class="navbar-brand fw-bolder" href="#">
+        Resume<span class="text-primary">Genius</span>
+      </a>
+
+      <!-- Toggle Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="isNavbarCollapsed = !isNavbarCollapsed"
+        aria-controls="navbarContent"
+        [attr.aria-expanded]="!isNavbarCollapsed"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div
+        class="navbar-collapse"
+        [class.collapse]="isNavbarCollapsed"
+        [class.show]="!isNavbarCollapsed"
+        id="navbarContent"
+      >
+        <ul class="navbar-nav align-items-center ms-auto">
+          <li class="nav-item">
+            <button
+              class="theme btn border-0"
+              (click)="toggleTheme()"
+              aria-label="Toggle Theme"
+            >
+              <i [class]="'bi ' + themeIcon" class="fs-4"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="#login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div
+    class="row justify-content-center align-items-center text-center text-md-start py-5 px-2 px-md-2"
+  >
+    <div class="col-10 col-md-4 col-lg-4 mb-5 mb-md-0">
+      <h1 class="fw-bold display-3">Job-Winning<br />Resume Templates</h1>
+      <p class="lead mt-3">
+        ⚡Accelerate your job search and land opportunities 2x faster with
+        recruiter-approved resume templates and AI-powered optimization
+        tools—designed to highlight your strengths and impress employers.
+      </p>
+      <div
+        class="d-flex flex-wrap gap-3 mt-4 justify-content-center justify-content-md-start"
+      >
+        <a href="#" class="btn btn-primary btn-lg">Create new resume</a>
+        <a href="#" class="btn btn-outline-dark btn-lg">Optimize my resume</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-5 col-lg-4 text-center m-1 move-right">
+      <div class="resume-image-container position-relative">
+        <img
+          src="https://cdn.resumod.co/uploads/image-1687007752273.jpg"
+          alt="Resume Screenshot"
+          class="resume-img img-fluid shadow rounded"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1433419992/photo/young-man-in-casual-blue-shirt-and-glasses-holding-phone-looking-at-camera-with-smile.jpg?s=612x612&w=0&k=20&c=c4nZbC7tuTRgUq_pFMaZHKB0_yz4sCf7T4irNqOlYOg="
+          alt="User"
+          class="profile-photo position-absolute rounded-circle"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <!-- CTA Section - Redesigned -->
+  <section
+    class="cta-section py-5 text-center text-md-start"
+    style="margin-top: 4%"
+  >
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-7 mb-4 mb-md-0">
+          <h2 class="cta-heading fw-bold">
+            Create a resume <br />
+            that <span class="highlight-underline">gets results</span>
+          </h2>
+        </div>
+        <div class="col-md-5 text-md-end text-center position-relative">
+          <img
+            src="../../assets/images/right-arrow.png"
+            alt="Arrow"
+            class="arrow-img d-none d-md-inline-block"
+          />
+          <a href="#" class="btn btn-primary btn-lg mt-3 mt-md-0"
+            >Choose a template</a
+          >
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <div class="row mt-5 text-center justify-content-center g-15">
+        <div class="col-md-4">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png"
+            class="feature-icon mb-2"
+            alt="Resume icon"
+          />
+          <h5 class="fw-bold">Recruiter-Approved Resume</h5>
+          <p class="text-muted">
+            We work with recruiters to design resume templates that format
+            automatically.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/709/709790.png"
+            class="feature-icon mb-2"
+            alt="Timer icon"
+          />
+          <h5 class="fw-bold">Finish Your Resume in 15 Minutes</h5>
+          <p class="text-muted">
+            Resume Now helps you tackle your work experience by reminding you
+            what you did at your job.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png"
+            class="feature-icon mb-2"
+            alt="Briefcase icon"
+          />
+          <h5 class="fw-bold">Land an Interview</h5>
+          <p class="text-muted">
+            We suggest the skills you should add. It helped over a million
+            people get interviews.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Review Section -->
+  <section class="review-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-6">
+          Our resume builder
+          <span class="highlight-underline">includes a review</span><br />
+          from one of our experts
+        </h2>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0 text-center">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/035/772/242/non_2x/job-resume-document-out-from-laptop-png.png"
+            alt="Resume review illustration"
+            class="img-fluid"
+            style="max-width: 80%"
+          />
+        </div>
+        <div class="ai col-md-6">
+          <div class="mb-4">
+            <h5 class="fw-bold">Real feedback from a Resume Analyst</h5>
+            <p class="text-muted mb-0">
+              We’ll read your resume carefully and suggest improvements
+            </p>
+          </div>
+          <div class="mb-4">
+            <h5 class="fw-bold">Section-by-section suggestions</h5>
+            <p class="text-muted mb-0">
+              Get detailed feedback on your summary, skills, work history, and
+              education sections
+            </p>
+          </div>
+          <div class="mb-4">
+            <h5 class="fw-bold">Get answers specific to your resume</h5>
+            <p class="text-muted mb-0">
+              Submit any questions you have for additional guidance
+            </p>
+          </div>
+          <div class="mb-4">
+            <h5 class="fw-bold">Quick turnaround</h5>
+            <p class="text-muted mb-3">
+              Get your review back in just 2–3 business days
+            </p>
+          </div>
+          <a href="#" class="btn btn-primary btn-lg mt-2">Choose a template</a>
+        </div>
+      </div>
+
+      <!-- Logos Section -->
+      <div class="row justify-content-center text-center mt-5 pt-4">
+        <p class="text-muted fw-semibold mb-3">Make your resume with AI</p>
+        <div
+          class="d-flex flex-wrap justify-content-center align-items-center gap-4"
+        >
+          <img
+            src="https://freelogopng.com/images/all_img/1681142315open-ai-logo.png"
+            alt="OpenAI"
+            height="24"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/DeepSeek_logo.svg/1280px-DeepSeek_logo.svg.png"
+            alt="USA Today"
+            height="24"
+          />
+          <img
+            src="https://logomakerr.ai/uploads/output/2024/03/17/eb4670c2376a91c3aeb110c32c438df5.jpg?t=1710632784"
+            alt="CNBC"
+            height="24"
+          />
+          <img
+            src="https://d3.harvard.edu/platform-digit/wp-content/uploads/sites/2/2022/11/copy.ai_.logo_.png"
+            alt="NYT"
+            height="24"
+          />
+          <img
+            src="https://1000logos.net/wp-content/uploads/2023/05/Bard-AI-Emblem.png"
+            alt="CNET"
+            height="24"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
